@@ -1,0 +1,9 @@
+name: Task Check
+description: Check status of cronitor tasks
+runs:
+  using: docker
+  image: Dockerfile
+inputs:
+  CRONITOR_KEY:
+    description: your cronitor key. jobs will be looped through to find any with status of running.
+    required: true
